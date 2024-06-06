@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <style>
+      .flexbox {
+        display: flex;
+        height: 250px;
+        background-color: antiquewhite;
+      }
+      .flexbox1 {
+        align-items: flex-start;
+      }
+      .flexbox2 {
+        align-items: flex-end;
+      }
+      .flexbox3 {
+        align-items: center;
+      }
+      .flexbox4 {
+        align-items: stretch;
+      }
+      .flexbox5 {
+        align-items: baseline;
+      }
+
+      .child1 {
+        background-color: coral;
+        width: 200px;
+        height: 100px;
+      }
+      .child2 {
+        background-color: firebrick;
+        width: 200px;
+        height: 120px;
+      }
+      .child3 {
+        background-color: olivedrab;
+        width: 200px;
+        height: 150px;
+      }
+      .child4 {
+        background-color: coral;
+        width: 200px;
+      }
+      .child5 {
+        background-color: firebrick;
+        width: 200px;
+      }
+      .child6 {
+        background-color: olivedrab;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex Start</h2>
+    <div class="flexbox flexbox1">
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+    </div>
+    <h2>Flex End</h2>
+    <div class="flexbox flexbox2">
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+    </div>
+    <h2>Center</h2>
+    <div class="flexbox flexbox3">
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+    </div>
+    <h2>Stretch</h2>
+    <div class="flexbox flexbox4">
+      <div class="child4"></div>
+      <div class="child5"></div>
+      <div class="child6"></div>
+    </div>
+    <h2>BaseLine</h2>
+    <div class="flexbox flexbox5">
+      <h1 class="child1">Hello World</h1>
+      <h2 class="child2">Hello World</h2>
+      <h5 class="child3">Hello World</h5>
+    </div>
+    
+  </body>
+</html>
