@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        .intro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            height: 100px;
+        }
+        .flexbox{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photos{
+            flex: 25%;
+
+        }
+        .photos img{
+            width: 100%;
+        }
+        @media (max-width: 800px){
+            .photos{
+                flex: 50%;
+            }
+        }
+        @media (max-width: 600px){
+            .photos{
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <h1>Susan's gallery</h1>
+    </div>
+
+    <div class="flexbox">
+        <div class="photos">
+            <img src="../img/p1.jpg" alt="ghost">
+            <img src="../img/p2.jpg" alt="puppy">
+            <img src="../img/p3.jpg" alt="girl and a cat">
+            <img src="../img/p4.jpg" alt="sakura">
+        </div>
+
+        <div class="photos">
+            <img src="../img/p5.jpg" alt="flowers">
+            <img src="../img/p6.jpg" alt="girl">
+            <img src="../img/p7.jpg" alt="rabbit">
+            <img src="../img/p8.jpg" alt="rose">
+        </div>
+
+        <div class="photos">
+            <img src="../img/p1.jpg" alt="ghost">
+            <img src="../img/p3.jpg" alt="girl and a cat">
+            <img src="../img/p5.jpg" alt="flowers">
+            <img src="../img/p7.jpg" alt="rabbit">
+        </div>
+
+        <div class="photos">
+            <img src="../img/p2.jpg" alt="puppy">
+            <img src="../img/p4.jpg" alt="sakura">
+            <img src="../img/p6.jpg" alt="girl">
+            <img src="../img/p8.jpg" alt="rose">
+        </div>
+    </div>
+</body>
+</html>

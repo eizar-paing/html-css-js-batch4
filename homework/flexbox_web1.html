@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox</title>
+    
+    <style>
+        .intro{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .first{
+            background-color: #F8F0E5;
+            height: 100px;
+        }
+        .second_all{
+            display: flex;
+            
+            flex-wrap: wrap;
+        }
+        .second_one{
+            flex: 25%;
+            background-color: #EADBC8;
+        }
+        .second_two{
+            flex: 50%;
+            background-color: #DAC0A3;
+        }
+        .second_three{
+            flex: 25%;
+            background-color: #102C57;
+        }
+        .third{
+            background-color: #F8F0E5;
+            height: 100px;
+        }
+        @media (max-width: 800px){
+            .second_one{
+                order: 2;
+                flex: 50%;
+            }
+            .second_two{
+                order: 1;
+                flex: 100%;
+            }
+            .second_three{
+                order: 3;
+                flex: 50%;
+            }
+        }
+        @media(max-width :600px){
+            .second_one, .second_two{
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro first">
+        <h1>Header</h1>
+    </div>
+
+    <div class="second_all">
+        <div class="intro second_one">
+            <h2>Aside 1</h2>
+        </div>
+        <div class="intro second_two">
+            <p style="font-family: Bell MT; font-size: 3cqh;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magnam earum reiciendis nam quasi, perspiciatis suscipit aut quaerat iusto veniam quod labore facilis perferendis! Repudiandae fuga quisquam nam quod beatae.</p>
+        </div>
+        <div class="intro second_three">
+            <h2>Aside 2</h2>
+        </div>
+    </div>
+
+    <div class="intro third">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>
