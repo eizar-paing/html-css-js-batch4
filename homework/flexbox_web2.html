@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Website</title>
+
+    <style>
+        .intro{
+            display: flex;
+        }
+        .Header{
+            background-color: #EFBC9B;
+            justify-content: center;
+            align-items: center;
+        }
+        .Body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .first{
+            flex: 25%;
+            margin: 5px;
+            padding: 10px;
+            height: 200px;
+        }
+        .second{
+            flex: 25%;
+            margin: 5px;
+            padding: 10px;
+            height: 200px;
+        }
+        .third{
+            flex: 40%;
+            background-color: #9CAFAA;
+            margin: 5px;
+            padding: 10px;
+            height: 200px;
+            
+        }
+        button{
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+        <div class="intro Header">
+            <p style="font-size: 25px; font-family: Bell MT;">Complex Flexbox example</p>
+        </div>
+
+        <div class="Body">
+            <div class="first" style="background-color: #FBF3D5;">
+                <h2>First Article</h2>
+                <p style="font-size: 17px; font-family: Bell MT;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ratione dolor omnis magnam, aliquam distinctio? Veritatis et illum, ea incidunt officia accusantium, voluptatem animi fugiat deleniti, velit nesciunt id quisquam.</p>
+            </div>
+
+            <div class="second" style="background-color: #D6DAC8;">
+                <h2>Second Article</h2>
+                <p style="font-size: 17px; font-family: Bell MT;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ratione dolor omnis magnam, aliquam distinctio? Veritatis et illum, ea incidunt officia accusantium, voluptatem animi fugiat deleniti, velit nesciunt id quisquam.</p>
+            </div>
+
+            <div class="third">
+                <button>Smile</button>
+                <button>Laugh</button>
+                <button>Wink</button>
+                <button>Shrug</button>
+                <button>Blush</button>
+                <p style="font-size: 17px; font-family: Bell MT;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ratione dolor omnis magnam, aliquam distinctio? Veritatis et illum, ea incidunt officia accusantium, voluptatem animi fugiat deleniti, velit nesciunt id quisquam.</p>
+            </div>
+        </div>
+</body>
+</html>
