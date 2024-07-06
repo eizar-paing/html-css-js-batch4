@@ -18,29 +18,37 @@
             display: flex;
             flex-wrap: wrap;
         }
-        .first{
+        .first, .second{
             flex: 25%;
             margin: 5px;
             padding: 10px;
-            height: 200px;
-        }
-        .second{
-            flex: 25%;
-            margin: 5px;
-            padding: 10px;
-            height: 200px;
+            height: 100%;
+            width: 100%;
         }
         .third{
             flex: 40%;
             background-color: #9CAFAA;
             margin: 5px;
             padding: 10px;
-            height: 200px;
+            height: 100%;
             
         }
         button{
             width: 70px;
             height: 30px;
+        }
+        .third_1{
+            justify-content: space-evenly;
+        }
+        @media(max-width: 1100px){
+            .third{
+                flex: 100%;
+            }
+        }
+        @media(max-width: 400px){
+            .second{
+                flex: 100%;
+            }
         }
     </style>
 </head>
@@ -61,11 +69,15 @@
             </div>
 
             <div class="third">
-                <button>Smile</button>
-                <button>Laugh</button>
-                <button>Wink</button>
-                <button>Shrug</button>
-                <button>Blush</button>
+                <div class="intro third_1">
+                    <button>Smile</button>
+                    <button>Laugh</button>
+                    <button>Wink</button>
+                    <button>Shrug</button>
+                    <button>Blush</button>
+                </div>
+
+                <p style="font-size: 17px; font-family: Bell MT;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ratione dolor omnis magnam, aliquam distinctio? Veritatis et illum, ea incidunt officia accusantium, voluptatem animi fugiat deleniti, velit nesciunt id quisquam.</p>
                 <p style="font-size: 17px; font-family: Bell MT;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ratione dolor omnis magnam, aliquam distinctio? Veritatis et illum, ea incidunt officia accusantium, voluptatem animi fugiat deleniti, velit nesciunt id quisquam.</p>
             </div>
         </div>
