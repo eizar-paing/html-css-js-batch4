@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        height: 100vh;
+      }
+      .div-bar {
+        background-color: darkorange;
+        line-height: 50px;
+        /* padding-top: 20px;
+        padding-bottom: 20px; */
+      }
+      .left {
+        background-color: darkgoldenrod;
+        float: left;
+        width: 20%;
+        height: 100vh;
+      }
+      .main {
+        background-color: green;
+        float: left;
+        width: 60%;
+        height: 100vh;
+      }
+      .right {
+        background-color: goldenrod;
+        float: right;
+        width: 20%;
+        height: 100vh;
+      }
+      @media (max-width: 700px) {
+        .left, .main, .right {
+          float: none;
+          width: 100%;
+        }
+        .left, .right {
+          height: 20%;
+        }
+        .main {
+          height: 60%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="div-bar">Header</div>
+    <div class="left">Left</div>
+    <div class="main">Main</div>
+    <div class="right">Right</div>
+    <div class="div-bar">Footer</div>
+</body>
+</html>
