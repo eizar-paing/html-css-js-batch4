@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .unordered1 li {
+    list-style-type: none;
+  }
+  .unordered1 li::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    margin-right: 5px;
+    float: left;
+    background-image: url('../../img/shop.png')
+  }
+
+  .unordered2 li {
+    list-style: none;
+    padding: 0 30px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url('../../img/shop.png');
+  }
+  
+</style>
+</head>
+<body>
+  <h2>Unordered List 1</h2>
+  <ul class="unordered1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <h2>Unordered List 2</h2>
+  <ul class="unordered2">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <h2>Ordered List</h2>
+  <ol class="ordered">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+</body>
+</html>
